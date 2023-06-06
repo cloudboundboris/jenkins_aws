@@ -43,7 +43,8 @@ services:
 ...
 EOF
 echo $(date +%m-%d-%Y_%H:%M:%S) "Docker compose file was created" >> /var/log/log.txt
-
+echo $(date +%m-%d-%Y_%H:%M:%S) "Sleeping 90 seconds" >> /var/log/log.txt
+sleep 90
 cd /home/ubuntu
 sudo git clone https://github.com/aws/efs-utils
 cd efs-utils
