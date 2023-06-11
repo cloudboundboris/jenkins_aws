@@ -33,3 +33,12 @@ variable "PRIVATE_KEY_PATH" {
 variable "EC2_USER" {
   default = "ubuntu"
 }
+
+variable "PORTS_ELB" {
+  type    = list(number)
+  default = [80, 443]
+}
+
+variable "DOMAIN_NAME" {
+  default = "thecloudbrain.com"
+}
